@@ -1,5 +1,5 @@
 FROM --platform=i386 termux/termux-docker:latest
-SHELL =noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt-y upgrade && \
 	apt install -y apt-utils beef bsdgames bsdmainutils ca-certificates clang 
