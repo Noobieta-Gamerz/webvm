@@ -2,8 +2,8 @@
 FROM --platform=i386 termux/termux-docker:latest
 SHELL =noninteractive
 
-RUN apt-get update && apt-get -y upgrade 
-	#apt-get install -y apt-utils beef bsdgames bsdmainutils ca-certificates clang \
+RUN apt update && apt-y upgrade && \
+	apt install -y apt-utils beef bsdgames bsdmainutils ca-certificates clang 
 	#cowsay cpio cron curl dmidecode dmsetup g++ gcc gdbm-l10n git  \
 	#hexedit  ifupdown init logrotate lsb-base lshw lua50 luajit lynx make \
 	#nano netbase nodejs openssl procps python3 python3-cryptography \
